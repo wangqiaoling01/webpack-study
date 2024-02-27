@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("window.ENV","production");console.log("sumRes",30)})();
