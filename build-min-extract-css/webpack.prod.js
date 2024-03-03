@@ -1,4 +1,3 @@
-const path = require('path')
 const webpack = require('webpack')
 const { merge } = require('webpack-merge')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
@@ -54,7 +53,7 @@ module.exports = merge(webpackCommonConf, {
         }),
         // 抽离 css 文件，将其放到 /css 目录下
         new MiniCssExtractPlugin({
-            filename: 'css/[name].[contenthash:8].js'
+            filename: 'css/[name].[contenthash:8].css'
         })
     ],
     optimization: {
