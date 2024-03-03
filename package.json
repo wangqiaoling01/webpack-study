@@ -12,7 +12,9 @@
         "multi-page-dev": "webpack-dev-server --config build-multi-page/webpack.dev.js",
         "multi-page-build": "webpack --config build-multi-page/webpack.prod.js",
         "min-extract-css-dev": "webpack-dev-server --config build-min-extract-css/webpack.dev.js",
-        "min-extract-css-build": "webpack --config build-min-extract-css/webpack.prod.js"
+        "min-extract-css-build": "webpack --config build-min-extract-css/webpack.prod.js",
+        "split-chunks-dev": "webpack-dev-server --config build-splitChunks/webpack.dev.js",
+        "split-chunks-build": "webpack --config build-splitChunks/webpack.prod.js"
     },
     "repository": {
         "type": "git",
@@ -47,5 +49,9 @@
         "webpack": "^5.90.3",
         "webpack-cli": "^5.1.4",
         "webpack-dev-server": "^5.0.2"
+    },
+    "dependencies": {
+        "antd": "^5.15.0",
+        "loadsh": "^0.0.4"
     }
 }

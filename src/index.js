@@ -18,3 +18,5 @@ insertImgElem(imgFile1)
 import imgFile2 from '@/assets/img/2.jpeg'
 insertImgElem(imgFile2)
 
+import _ from 'loadsh'
+console.log(_.get);
