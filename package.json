@@ -8,7 +8,9 @@
         "base-dev": "webpack-dev-server --config build-base-conf/webpack.dev.js",
         "base-build": "webpack --config build-base-conf/webpack.prod.js",
         "img-dev": "webpack-dev-server --config build-img-conf/webpack.dev.js",
-        "img-build": "webpack --config build-img-conf/webpack.prod.js"
+        "img-build": "webpack --config build-img-conf/webpack.prod.js",
+        "multi-page-dev": "webpack-dev-server --config build-multi-page/webpack.dev.js",
+        "multi-page-build": "webpack --config build-multi-page/webpack.prod.js"
     },
     "repository": {
         "type": "git",
