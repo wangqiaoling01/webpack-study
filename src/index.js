@@ -20,3 +20,15 @@ insertImgElem(imgFile2)
 
 import _ from 'loadsh'
 console.log(_.get);
+
+// 假设这个文件很大 需要懒加载
+setTimeout(() => {
+    // 定义chunk
+    import('./dynamic-data').then(res => {
+        // 注意这里有个 default
+        console.log(res.default.msg);
+    })
+}, 2000);
+import reactMsg from './react-demo.jsx'
+
+console.log(reactMsg.msg);
