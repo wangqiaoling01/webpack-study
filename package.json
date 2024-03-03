@@ -10,7 +10,9 @@
         "img-dev": "webpack-dev-server --config build-img-conf/webpack.dev.js",
         "img-build": "webpack --config build-img-conf/webpack.prod.js",
         "multi-page-dev": "webpack-dev-server --config build-multi-page/webpack.dev.js",
-        "multi-page-build": "webpack --config build-multi-page/webpack.prod.js"
+        "multi-page-build": "webpack --config build-multi-page/webpack.prod.js",
+        "min-extract-css-dev": "webpack-dev-server --config build-min-extract-css/webpack.dev.js",
+        "min-extract-css-build": "webpack --config build-min-extract-css/webpack.prod.js"
     },
     "repository": {
         "type": "git",
@@ -28,14 +30,19 @@
     "devDependencies": {
         "@babel/core": "^7.23.9",
         "@babel/preset-env": "^7.23.9",
+        "autoprefixer": "^10.4.18",
         "babel-loader": "^9.1.3",
         "clean-webpack-plugin": "^4.0.0",
         "css-loader": "^6.10.0",
         "file-loader": "^6.2.0",
         "html-webpack-plugin": "^5.6.0",
+        "less": "^4.2.0",
         "less-loader": "^12.2.0",
+        "mini-css-extract-plugin": "^2.8.1",
+        "optimize-css-assets-webpack-plugin": "^6.0.1",
         "postcss-loader": "^8.1.0",
         "style-loader": "^3.3.4",
+        "terser-webpack-plugin": "^5.3.10",
         "url-loader": "^4.1.1",
         "webpack": "^5.90.3",
         "webpack-cli": "^5.1.4",
