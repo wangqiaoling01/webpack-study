@@ -11,15 +11,6 @@ const devServer = {
     port: 8000,
     compress: true,  // 启动 gzip 压缩
     allowedHosts: 'all',
-    static: {
-        directory: path.join(srcPath, 'assets'),
-        // publicPath: path.join(srcPath, 'assets')
-    },
-    // static: distPath,
-    // output: {
-    //     // TODO ？？没懂
-    //     publicPath: '/'
-    // },
     // **********************************
     // ------- 使用测试环境接口时用 --------
     // **********************************

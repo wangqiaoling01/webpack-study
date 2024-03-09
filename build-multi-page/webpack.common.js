@@ -1,7 +1,59 @@
 const path = require('path')
 const {srcPath} = require('../build-utils/paths')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
+// module: {
+//     rules: [{
+//         test: /\.[jt]sx?$/,
+//         exclude: /node_modules/,
+//         use: {
+//             loader: 'babel-loader'
+//         }
+//     }, {
+//         test: /\.css$/,
+//         use: [
+//             {loader: MiniCssExtractPlugin.loader},
+//             {loader: 'css-loader'},
+//             {loader: 'postcss-loader'}
+//         ]
+//     }, {
+//         test: /\.less$/,
+//         use: [
+//             {loader: MiniCssExtractPlugin.loader},
+//             {
+//                 loader: 'css-loader',
+//                 options: {
+//                     importLoaders: 1,
+//                     modules: {
+//                         auto: resourcePath => resourcePath.endsWith('.less'),
+//                         localIdentName: '[local]_[hash:base64:5]',
+//                         localIdentHashSalt: Date.now() + '' // hash的salt取编译时间，保证每次编译生成的class名字都不一样
+//                     }
+//                 }
+//             },
+//             {loader: 'postcss-loader'},
+//             {
+//                 loader: 'less-loader',
+//                 options: {
+//                     lessOptions: {javascriptEnabled: true}
+//                 }
+//             }
+//         ]
+//     }, {
+//         test: /\.(png|jpe?g|gif)$/,
+//         type: 'asset/resource',
+//         exclude: /node_modules|icons/
+//     }, {
+//         test: /\.svg$/,
+//         issuer: /\.(css|less)$/,
+//         type: 'asset/resource',
+//         exclude: /node_modules/
+//     }, {
+//         exclude: /node_modules/,
+//         test: /\.svg$/,
+//         issuer: /\.[jt]sx?$/,
+//         use: [{loader: '@svgr/webpack', options: {icon: true}}]
+//     }]
+// },
 module.exports = {
     entry: {
         index: path.join(srcPath, 'index.js'),
